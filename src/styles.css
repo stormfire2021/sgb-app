@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~materialize-css/dist/css/materialize.css";
+@import "~material-icons/iconfont/material-icons.css";
+
+:root {
+  --primaryColor: yellow;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+body, html {
+  background-image: url(assets/livro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
