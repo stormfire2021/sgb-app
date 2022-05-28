@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { CentralComponent } from './central/central.component';
 
 
 
@@ -13,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     MenuComponent,
     FooterComponent,
+    CentralComponent,
+
   ] ,
   imports: [
     BrowserModule,

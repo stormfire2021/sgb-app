@@ -20,7 +20,6 @@ export class CentralComponent implements OnInit {
     };
   }
 
-
   ngOnInit(): void {
   }
 
