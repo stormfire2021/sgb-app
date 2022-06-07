@@ -13,4 +13,19 @@
   border: 0;
 }
 
+table {
+  width: 100%;
+}
+.example-container {
+  height: 600px;
+  max-width: 100%;
+  overflow: auto;
 
+}
+
+thead:first-child{
+  background-color:darkgray;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
