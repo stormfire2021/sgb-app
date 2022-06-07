@@ -1,0 +1,89 @@
+<div class="row container ">
+  <form class="form-horizontal">
+    <p></p>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="livro" type="text" length="50">
+        <label for="autor">Livro</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="autor" type="text" length="50">
+        <label for="autor">Autor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="editora" type="text" length="50">
+        <label for="editora">Editora</label>
+      </div>
+    </div>
+    <div class="row">
+        <td class="input-field col  "> Tipo</td>
+        <td  class="input-field col s6 ">
+          <tr>
+              <td>
+                <label for="tipoFisico">
+                  <input class="with-gap" name="groupTipo" type="radio" id="tipoFisico" />
+                  <span>Físico</span>
+                </label>
+                </td>
+
+              <td>
+                  <label for="tipoDigital">
+                  <input class="with-gap" name="groupTipo" type="radio" id="tipoDigital" />
+                  <span>Digital</span>
+                  </label>
+                </td>
+          </tr>
+        </td>
+
+
+    </div>
+    <div class="row">
+
+        <td class="input-field col ">Formato</td>
+        <td class="input-field col s6 ">
+          <tr>
+            <td>
+              <label for="pdf">
+                <input type="checkbox" class="filled-in" id="pdf"  />
+                <span>PDF</span>
+              </label>
+            </td>
+            <td>
+              <label for="epub">
+                <input type="checkbox" class="filled-in" id="epub" />
+                <span>EPUB</span>
+              </label>
+            </td>
+            <td>
+              <label for="outros">
+                <input type="checkbox" class="filled-in" id="outros"/>
+                <span>Outros</span>
+              </label>
+            </td>
+          </tr>
+        </td>
+
+    </div>
+      <div class="row">
+        <td class="input-field">Categoria</td>
+        <td  class="input-field col s6 ">
+          <select class="browser-default">
+          <option *ngFor="let cat of categorias" [value]="cat.categoria">{{cat.categoria}}</option>
+        </select></td>
+
+
+    </div>
+    <div class="row">
+      <th><a class="waves-effect waves-light btn-small">Salvar</a></th>
+
+      <th><a class="waves-effect waves-light btn-small">Cancelar</a></th>
+    </div>
+
+  </form>
+
+</div>
+

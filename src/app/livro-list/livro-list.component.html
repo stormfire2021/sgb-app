@@ -1,0 +1,54 @@
+<h2>Lista Livros </h2>
+
+<div class="example-container">
+  <table class="table table-striped, position: fixed ">
+    <thead>
+      <th></th>
+      <th scope = "col">ID.           </th>
+        <th scope = "col">Livro        </th>
+        <th scope = "col">Autor       </th>
+        <th scope = "col">Tipo      </th>
+        <th scope = "col">Formato  </th>
+        <th scope = "col">Categoria     </th>
+        <th scope = "col">Editar   </th>
+        <th scope = "col">Deletar     </th>
+    </thead>
+
+<tbody>
+
+<tr *ngFor = 'let liv of livros '>
+  <td></td>
+      <td>
+        {{liv.idLivro}}
+      </td>
+      <td>
+          {{liv.livro}}
+      </td>
+      <td>
+          {{liv.autor}}
+      </td>
+      <td>
+          {{liv.tipo}}
+      </td>
+
+      <td>
+          {{liv.formato}}
+      </td>
+
+      <td>
+          {{liv.categoria}}
+      </td>
+
+
+      <td scope = "col">
+        <a [routerLink]="" width="25px"><i class="material-icons">edit</i></a>
+
+      </td>
+      <td scope = "col">
+        <a [routerLink]="" width="25px"><i class="material-icons">delete</i></a>
+       </td>
+</tr>
+</tbody>
+</table>
+</div>
+
