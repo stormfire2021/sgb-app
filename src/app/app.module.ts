@@ -24,6 +24,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatStepperModule} from "@angular/material/stepper";
 import {MatNativeDateModule} from "@angular/material/core";
 import {MatDividerModule} from "@angular/material/divider";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {MatDividerModule} from "@angular/material/divider";
     CentralComponent,
     LivroComponent,
     LivroListComponent,
+    LoginComponent,
 
   ] ,
   imports: [
@@ -55,6 +57,7 @@ import {MatDividerModule} from "@angular/material/divider";
     RouterModule.forRoot([
       { path: '', component: LivroListComponent },
       { path: 'livro', component: LivroComponent },
+      { path: 'login', component: LoginComponent },
 
     ])
   ],
