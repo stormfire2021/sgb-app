@@ -1,89 +1,154 @@
-<div class="row container ">
-  <form class="form-horizontal">
-    <p></p>
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="livro" type="text" length="50">
-        <label for="autor">Livro</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="autor" type="text" length="50">
-        <label for="autor">Autor</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="editora" type="text" length="50">
-        <label for="editora">Editora</label>
-      </div>
-    </div>
-    <div class="row">
-        <td class="input-field col  "> Tipo</td>
-        <td  class="input-field col s6 ">
-          <tr>
-              <td>
-                <label for="tipoFisico">
-                  <input class="with-gap" name="groupTipo" type="radio" id="tipoFisico" />
-                  <span>Físico</span>
-                </label>
-                </td>
-
-              <td>
-                  <label for="tipoDigital">
-                  <input class="with-gap" name="groupTipo" type="radio" id="tipoDigital" />
-                  <span>Digital</span>
-                  </label>
-                </td>
-          </tr>
-        </td>
-
-
-    </div>
-    <div class="row">
-
-        <td class="input-field col ">Formato</td>
-        <td class="input-field col s6 ">
-          <tr>
-            <td>
-              <label for="pdf">
-                <input type="checkbox" class="filled-in" id="pdf"  />
-                <span>PDF</span>
-              </label>
-            </td>
-            <td>
-              <label for="epub">
-                <input type="checkbox" class="filled-in" id="epub" />
-                <span>EPUB</span>
-              </label>
-            </td>
-            <td>
-              <label for="outros">
-                <input type="checkbox" class="filled-in" id="outros"/>
-                <span>Outros</span>
-              </label>
-            </td>
-          </tr>
-        </td>
-
-    </div>
+<div class="card-panel blue-grey darken-2 center card-title white-text">  Cadastro Livro </div>
+  <!-- Div principal-->
+  <div class="container contact">
+    <form class="col s12" #form="ngForm" (submit)="onSubmit()">
+      <!--div do input-livro-->
       <div class="row">
-        <td class="input-field">Categoria</td>
-        <td  class="input-field col s6 ">
-          <select class="browser-default">
-          <option *ngFor="let cat of categorias" [value]="cat.categoria">{{cat.categoria}}</option>
-        </select></td>
+        <div class="input-field col s12">
+          <input
+            id="input-livro"
+            name="input-livro"
+            type="text"
+            class="validate"
+            [(ngModel)]="this.liv.livro"
+            pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
+            #name="ngModel"
+            required/>
+          <label for="input-Livro">Livro *</label>
+          <div class="red-text" [hidden]="name.valid || name.untouched">
+            Por favor, informe o  Titulo do Livro.
+          </div>
+          <span
+            class="helper-text"
+            data-error="O campo é inválido"
+            data-success="Campo Valido"></span>
+         </div>
+      </div>
+
+        <!--div input-autor e input-editora -->
+      <div class="row">
+        <div class="input-field col s6">
+          <input
+            id="input-autor"
+            name="input-autor"
+            type="text"
+            class="validate"
+            [(ngModel)]="this.liv.autor"
+            pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
+            #name="ngModel"
+            required/>
+          <label for="input-autor">Autor *</label>
+          <div class="red-text" [hidden]="name.valid || name.untouched">
+            Por favor, informe o nome do autor.
+          </div>
+          <span
+            class="helper-text"
+            data-error="O campo é inválido"
+            data-success="Campo Valido"></span>
+        </div>
+
+        <div class="input-field col s6">
+          <input
+            id="input-editora"
+            name="input-editora"
+            type="text"
+            class="validate"
+            [(ngModel)]="this.liv.editora"
+            pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
+            #name="ngModel"
+            required/>
+          <label for="input-editora">Editora *</label>
+          <div class="red-text" [hidden]="name.valid || name.untouched">
+            Por favor, informar a Editora
+          </div>
+          <span
+            class="helper-text"
+            data-error="O campo é inválido"
+            data-success="Campo Valido"></span>
+        </div>
+      </div>
+
+      <!-- div selects-->
+      <div class="row">
+        <div class="input-field col s6">
+          <li><label [ngStyle]="{'font-size': '14px' }"  for="input-tipo">Tipo *</label></li>
+            <select class="browser-default" id="input-tipo" name="input-tipo"
+            [(ngModel)]="this.liv.tipo" required>
+              <option value=""> Selecione</option>
+              <option value="Fisico">Fisico</option>
+              <option value="Digital">Digital</option>
+              <option value="Ambos">Ambos</option>
+            </select>
+        </div>
+
+        <div class="input-field col s6">
+          <li><label [ngStyle]="{'font-size': '14px' }" for="input-categoria">Categoria *</label></li>
+            <select class="browser-default" id="input-categoria" name="input-categoria"
+            [(ngModel)]="this.liv.categoria" required>
+              <option value=""> Selecione</option>
+              <option *ngFor="let cat of categorias" [value]="cat.categoria">{{cat.categoria}}</option>
+            </select>
+          </div>
+      </div>
+
+      <!-- div botoes -->
+      <div class="container">
+        <div class="row">
+        <div class="input-field col s6">
+            <button
+             class="btn waves-effect waves-light  blue-grey darken-2" type="submit"
+             [disabled]="!form.valid">Salvar<i class="material-icons right">save</i>
+            </button>
+        </div>
+        <div class="input-field col s6 center">
+            <button
+              class="btn waves-effect waves-light blue-grey darken-2 " routerLink="/home">
+                Voltar<i class="material-icons right">arrow_back</i>
+            </button>
+
+        </div>
+      </div>
+
+      </div>
 
 
-    </div>
-    <div class="row">
-      <th><a class="waves-effect waves-light btn-small">Salvar</a></th>
 
-      <th><a class="waves-effect waves-light btn-small">Cancelar</a></th>
-    </div>
+     </form>
 
-  </form>
+  </div>
+  <div class="table-container">
+    <table  class="striped">
+        <thead class=" blue-grey darken-2 white-text   ">
+        <th></th>
+        <th scope = "col">ID.           </th>
+          <th scope = "col">Livro        </th>
+          <th scope = "col">Autor       </th>
+          <th scope = "col">Tipo      </th>
+          <th scope = "col">Editora  </th>
+          <th scope = "col">Categoria     </th>
+          <th scope = "col">Editar   </th>
+          <th scope = "col">Deletar     </th>
+        </thead>
+          <tbody >
+            <tr *ngFor = 'let liv of livs'>
+              <td></td>
+                  <td>{{liv.id}}</td>
+                  <td>{{liv.livro}}</td>
+                  <td>{{liv.autor}}</td>
+                  <td>{{liv.editora}}</td>
+                  <td>{{liv.tipo}}</td>
+                  <td>{{liv.categoria}}</td>
+                <td scope = "col">
+                    <a [routerLink]="" width="25px"><i class="material-icons yellow-text ">edit</i></a>
+                </td>
+                <td scope = "col">
+                    <a [routerLink]="" width="25px"><i class="material-icons red-text ">delete</i></a>
+                </td>
+            </tr>
+          </tbody>
+    </table>
+  </div>
 
-</div>
+
+
 

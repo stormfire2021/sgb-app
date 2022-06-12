@@ -1,0 +1,190 @@
+{
+  "categorias": [
+    {
+      "idCategoria": 1,
+      "categoria": "Programação"
+    },
+    {
+      "idCategoria": 2,
+      "categoria": "Banco de Dados"
+    },
+    {
+      "idCategoria": 3,
+      "categoria": "Literatura"
+    },
+    {
+      "idCategoria": 4,
+      "categoria": "História"
+    },
+    {
+      "idCategoria": 5,
+      "categoria": "Geografia"
+    },
+    {
+      "idCategoria": 6,
+      "categoria": "Ficção Cientifica"
+    },
+    {
+      "idCategoria": 7,
+      "categoria": "Manga"
+    },
+    {
+      "idCategoria": 8,
+      "categoria": "HQ"
+    },
+    {
+      "idCategoria": 9,
+      "categoria": "Religião"
+    },
+    {
+      "idCategoria": 10,
+      "categoria": "Infantil"
+    }
+  ],
+  "livros": [
+    {
+      "id": "1",
+      "livro": "Programação em java",
+      "autor": "Fulano",
+      "editora": "Nois tenta",
+      "tipo": "Fisico",
+      "categoria": "Programação"
+    },
+    {
+      "id": "2",
+      "livro": "Senhor dos Aneis",
+      "autor": "J. R. R. Tolkien",
+      "editora": "Europa America",
+      "tipo": "Fisico",
+      "categoria": "Literatura"
+    },
+    {
+      "id": "3",
+      "livro": "DBase lll Plus",
+      "autor": "LALALALA",
+      "editora": "So Deus Sabe",
+      "tipo": "Digital",
+      "categoria": "Banco de Dados"
+    },
+    {
+      "id": "4",
+      "livro": "Atlas Geografico",
+      "autor": "1956",
+      "editora": "Mundo",
+      "tipo": "Fisico",
+      "categoria": "Geografia"
+    },
+    {
+      "id": "5",
+      "livro": "JavaScript para iniciantes",
+      "autor": "Alguem Inteligente",
+      "editora": "Nois Tenta",
+      "tipo": "Digital",
+      "categoria": "Programação"
+    },
+    {
+      "id": "6",
+      "livro": "The Big Bang Theory",
+      "autor": "Chuck Lore",
+      "editora": "Wanner Bros",
+      "tipo": "Digital",
+      "categoria": "HQ"
+    },
+    {
+      "id": "7",
+      "livro": "Sherlock Holmes",
+      "autor": "Arthur Conan Doyle",
+      "editora": "Boa Pergunta",
+      "tipo": "Fisico",
+      "categoria": "Literatura"
+    },
+    {
+      "id": "8",
+      "livro": "Star Trek",
+      "autor": "Gene Roddenberry",
+      "editora": "1960 Original",
+      "tipo": "Digital",
+      "categoria": "Ficção Cientifica"
+    },
+    {
+      "id": "9",
+      "livro": "Star Wars",
+      "autor": "George Lucas",
+      "editora": "Esquecendo Jar Jar Binks",
+      "tipo": "Digital",
+      "categoria": "Ficção Cientifica"
+    },
+    {
+      "id": "10",
+      "livro": "Akira",
+      "autor": "Katsuhiro Otomo",
+      "editora": "Vicio",
+      "tipo": "Digital",
+      "categoria": "Mangá"
+    },
+    {
+      "id": "11",
+      "livro": "X-Men #4 - SW",
+      "autor": "Stan Lee",
+      "editora": "Marvel Comics",
+      "tipo": "Fisico",
+      "categoria": "HQ"
+    },
+    {
+      "id": "166",
+      "livro": "lalala",
+      "autor": "lalala",
+      "editora": "lalala",
+      "tipo": "lalala",
+      "formato": "lalala",
+      "categoria": "lalala"
+    },
+    {
+      "id": "537",
+      "livro": "Tesste Teste",
+      "autor": "Tesste Teste",
+      "editora": "Tesste Teste",
+      "tipo": "Fisico",
+      "categoria": "Programação"
+    },
+    {
+      "id": "382",
+      "livro": "Tesste Teste",
+      "autor": "Tesste Teste",
+      "editora": "Tesste Teste",
+      "tipo": "Fisico",
+      "categoria": "Banco de Dados"
+    },
+    {
+      "id": "76",
+      "livro": "Teste 2",
+      "autor": "Teste 2 Autor",
+      "editora": "Teste 2 Editora",
+      "tipo": "Digital",
+      "categoria": "Geografia"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "email": "sheldor@gmail.com",
+      "user": "sheldon",
+      "password": "cooper",
+      "permission": "admin"
+    },
+    {
+      "id": 2,
+      "email": "sw@gmail.com",
+      "user": "scarlet",
+      "password": "witch",
+      "permission": "admin"
+    },
+    {
+      "id": 3,
+      "email": "wolverine@gmail.com",
+      "user": "james",
+      "password": "logan",
+      "permission": "read"
+    }
+  ]
+}

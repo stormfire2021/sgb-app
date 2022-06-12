@@ -1,54 +1,29 @@
-<h2>Lista Livros </h2>
+<div class="card-panel blue-grey darken-2 center card-title white-text size-font: 20px">Lista Livros </div>
 
 <div class="example-container">
-  <table class="table table-striped, position: fixed ">
-    <thead>
-      <th></th>
-      <th scope = "col">ID.           </th>
-        <th scope = "col">Livro        </th>
-        <th scope = "col">Autor       </th>
-        <th scope = "col">Tipo      </th>
-        <th scope = "col">Formato  </th>
-        <th scope = "col">Categoria     </th>
-        <th scope = "col">Editar   </th>
-        <th scope = "col">Deletar     </th>
+  <table  class="striped">
+    <thead class=" blue-grey darken-1 white-text   ">
+    <th></th>
+    <th scope = "col">ID.           </th>
+      <th scope = "col">Livro        </th>
+      <th scope = "col">Autor       </th>
+      <th scope = "col">Tipo      </th>
+      <th scope = "col">Editora  </th>
+      <th scope = "col">Categoria     </th>
+
     </thead>
+      <tbody >
+        <tr *ngFor = 'let liv of livros'>
+          <td></td>
+              <td>{{liv.id}}</td>
+              <td>{{liv.livro}}</td>
+              <td>{{liv.autor}}</td>
+              <td>{{liv.editora}}</td>
+              <td>{{liv.tipo}}</td>
+              <td>{{liv.categoria}}</td>
 
-<tbody>
-
-<tr *ngFor = 'let liv of livros '>
-  <td></td>
-      <td>
-        {{liv.idLivro}}
-      </td>
-      <td>
-          {{liv.livro}}
-      </td>
-      <td>
-          {{liv.autor}}
-      </td>
-      <td>
-          {{liv.tipo}}
-      </td>
-
-      <td>
-          {{liv.formato}}
-      </td>
-
-      <td>
-          {{liv.categoria}}
-      </td>
-
-
-      <td scope = "col">
-        <a [routerLink]="" width="25px"><i class="material-icons">edit</i></a>
-
-      </td>
-      <td scope = "col">
-        <a [routerLink]="" width="25px"><i class="material-icons">delete</i></a>
-       </td>
-</tr>
-</tbody>
+        </tr>
+      </tbody>
 </table>
 </div>
 

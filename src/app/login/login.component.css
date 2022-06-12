@@ -6,7 +6,7 @@
 
 .bg-img {
   background-image: url(../../assets/livro.jpg);
-  height: 70vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
 }
@@ -40,7 +40,7 @@
   font-size: 33px;
   font-weight: 600;
   margin: 0 0 35px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoi', sans-serif;
 }
 
 .field {
@@ -52,7 +52,7 @@
 }
 
 .field span {
-  color: #222;
+  color: #455a64;
   width: 40px;
   line-height: 45px;
   padding: 0 10px;
@@ -64,9 +64,9 @@
   background: transparent;
   border: none;
   outline: none;
-  color: #222;
+  color: #455a64;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoi', sans-serif;
 }
 
 .pass {
@@ -76,7 +76,7 @@
 
 .pass a {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoi', sans-serif;
   text-decoration: none;
 }
 
@@ -84,27 +84,7 @@
   text-decoration: underline;
 }
 
-input[type="submit"] {
-  background: linear-gradient(to right, #0000ff 0%, #6666ff 100%);
-  border: 1px solid linear-gradient(to right, #0000ff 0%, #6666ff 100%);
-  ;
-  color: #fff;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-}
 
-input[type="submit"]:hover {
-  background: linear-gradient(to left, #0000ff 0%, #6666ff 100%);
-}
-
-.login {
-  color: #fff;
-  margin: 10px 0;
-  font-family: 'Segoi UI', sans-serif;
-}
 
 .link {
   display: flex;
@@ -112,30 +92,15 @@ input[type="submit"]:hover {
   color: #fff;
   margin: 0 0 20px 0;
 }
-
-.link i {
-  font-size: 17px;
+.button1 {
+  padding: 10px 24px;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: bold;
 }
 
-.link span {
-  font-size: 15px;
-  margin-left: 8px;
-
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+.button1:hover {
+  background-color: #455a64;
+  color: #ffffff;
 }
 
-.signup {
-  color: #fff;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.signup a {
-  color: #37ff00;
-  text-decoration: none;
-}
-
-.signup a:hover {
-  text-decoration: underline;
-}
