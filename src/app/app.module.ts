@@ -13,6 +13,8 @@ import { LivroComponent } from './livro/livro.component';
 import { LivroListComponent } from './livro-list/livro-list.component';
 
 import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { LoginComponent } from './login/login.component';
     LivroComponent,
     LivroListComponent,
     LoginComponent,
+    UserComponent,
+    CategoriaComponent,
 
   ] ,
   imports: [

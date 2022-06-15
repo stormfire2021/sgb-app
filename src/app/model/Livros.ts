@@ -8,7 +8,7 @@ export class Livro {
 
   constructor( livro: string, autor: string, editora: string, tipo: string,
     categoria: string) {
-    this.id = String(Math.round(Math.random() * 1000));
+    this.id = String(Math.round(Math.random() * 100));
     this.livro = livro;
     this.autor = autor;
     this.editora = editora;

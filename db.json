@@ -1,44 +1,44 @@
 {
   "categorias": [
     {
-      "idCategoria": 1,
+      "id": 1,
       "categoria": "Programação"
     },
     {
-      "idCategoria": 2,
+      "id": 2,
       "categoria": "Banco de Dados"
     },
     {
-      "idCategoria": 3,
+      "id": 3,
       "categoria": "Literatura"
     },
     {
-      "idCategoria": 4,
+      "id": 4,
       "categoria": "História"
     },
     {
-      "idCategoria": 5,
+      "id": 5,
       "categoria": "Geografia"
     },
     {
-      "idCategoria": 6,
+      "id": 6,
       "categoria": "Ficção Cientifica"
     },
     {
-      "idCategoria": 7,
+      "id": 7,
       "categoria": "Manga"
     },
     {
-      "idCategoria": 8,
+      "id": 8,
       "categoria": "HQ"
     },
     {
-      "idCategoria": 9,
+      "id": 9,
       "categoria": "Religião"
     },
     {
-      "idCategoria": 10,
-      "categoria": "Infantil"
+      "id": "27",
+      "categoria": "Aventura"
     }
   ],
   "livros": [

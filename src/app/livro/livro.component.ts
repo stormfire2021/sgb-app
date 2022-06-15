@@ -16,7 +16,6 @@ export class LivroComponent implements OnInit {
 
   categorias: Categoria[] =[];
 
-
   liv!: Livro;
   livs?: Livro[];
 
