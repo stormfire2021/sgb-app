@@ -21,3 +21,7 @@ Atividade 09
 - [x] Validação dos campos do formulario livro com expressoes regulares e mostrar erro
 - [x] Desabilitar o botão salvar do cadastro enquanto este for invalido
 - [x] Cadastrar uma entidade no json-server via httpCliente
+Atividade 10
+- [x] Fazer requisições a API com tratamento da resposta com Promises. ( pasta service/list-livro.service.ts)
+- [x] Cadastrar uma entidade no JSON Server.(componnente livro)
+
