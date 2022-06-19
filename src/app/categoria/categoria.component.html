@@ -1,72 +1,82 @@
 <div class="card-panel blue-grey darken-2 center card-title white-text">
-    Gerenciador Cagegoria </div>
-  <!-- Div principal-->
-  <div class="container contact">
-    <form class="col s8" #formCategoria="ngForm" (submit)="onSubmit()">
-      <div class="row">
-        <div class=" input-field col s2"></div>
-      <div class="input-field col s4">
-        <input
-          id="input-categoria"
-          name="input-categoria"
-          type="text"
-          class="validate"
-          [(ngModel)]="this.cat.categoria"
-          #name="ngModel"
-          required/>
-        <label for="input-categoria">Categoria *</label>
-        <div class="red-text" [hidden]="name.valid || name.untouched">
-          Por favor, informe a categoria.
-        </div>
-        <span
-          class="helper-text"
-          data-error="O campo é inválido"
-          data-success="Campo Valido"></span>
+  Gerenciador Cagegoria </div>
+<!-- Div principal-->
+<div class="container contact">
+  <form class="col s8" #formCategoria="ngForm" (submit)="onSubmit()">
+    <div class="row">
+      <div class=" input-field col s2"></div>
+    <div class="input-field col s4">
+      <input
+        id="input-categoria"
+        name="input-categoria"
+        type="text"
+        class="validate"
+        [(ngModel)]="this.cat.categoria"
+        #name="ngModel"
+        required/>
+      <label for="input-categoria">Categoria *</label>
+      <div class="red-text" [hidden]="name.valid || name.untouched">
+        Por favor, informe a categoria.
       </div>
-      <div class="input-field col s2">
-        <br>
-         <li> <button
-          class="btn waves-effect waves-light  blue-grey darken-2" type="submit"
-          [disabled]="!formCategoria.valid">Salvar<i class="material-icons right">save</i>
-         </button>
-       </li>
-     </div>
-     <div class="input-field col s2">
-       <br>
-       <li>
-         <button
-           class="btn waves-effect waves-light blue-grey darken-2 " routerLink="/home">
-             Voltar<i class="material-icons right">arrow_back</i>
-         </button>
-       </li>
-      </div>
-     </div>
+      <span
+        class="helper-text"
+        data-error="O campo é inválido"
+        data-success="Campo Valido"></span>
+    </div>
+    <div class="input-field col s2">
+      <br>
+       <li> <button
+        class="btn waves-effect waves-light  blue-grey darken-2" type="submit"
+        [disabled]="!formCategoria.valid">Salvar<i class="material-icons right">save</i>
+       </button>
+     </li>
+   </div>
+   <div class="input-field col s2">
+     <br>
+     <li>
+       <button
+         class="btn waves-effect waves-light blue-grey darken-2 " routerLink="/home">
+           Voltar<i class="material-icons right">arrow_back</i>
+       </button>
+     </li>
+    </div>
+   </div>
 
-    </form>
+  </form>
+</div>
+<div class="container">
+<div class="table-container">
+  <table  class="striped">
+      <thead class=" blue-grey darken-2 white-text   ">
+      <th></th>
+      <th scope = "col">ID.           </th>
+        <th scope = "col">Categoria        </th>
+        <th scope = "col">Editar   </th>
+        <th scope = "col">Deletar     </th>
+      </thead>
+        <tbody >
+          <tr *ngFor = 'let c of categorias'>
+            <td></td>
+                <td>{{c.id}}</td>
+                <td>{{c.categoria}}</td>
+              <td scope = "col">
+                  <a [routerLink]="" width="25px"><i class="material-icons yellow-text ">edit</i></a>
+              </td>
+              <td scope = "col">
+                  <a width="25px"><i class="material-icons red-text " (click)="onDelete(c.id)">delete</i></a>
+              </td>
+          </tr>
+        </tbody>
+  </table>
+  <div *ngIf="!categorias || categorias!.length == 0">
+    <div class="row">
+      <div class="center-align">
+        <i class="col s12 material-icons large red-text">sentiment_dissatisfied</i>
+        <span class="col s12 flow-text red-text"
+          >Sem categorias cadastradas!</span
+        >
+      </div>
+    </div>
   </div>
-  <div class="container">
-  <div class="table-container">
-    <table  class="striped">
-        <thead class=" blue-grey darken-2 white-text   ">
-        <th></th>
-        <th scope = "col">ID.           </th>
-          <th scope = "col">Categoria        </th>
-          <th scope = "col">Editar   </th>
-          <th scope = "col">Deletar     </th>
-        </thead>
-          <tbody >
-            <tr *ngFor = 'let c of categorias'>
-              <td></td>
-                  <td>{{c.id}}</td>
-                  <td>{{c.categoria}}</td>
-                <td scope = "col">
-                    <a [routerLink]="" width="25px"><i class="material-icons yellow-text ">edit</i></a>
-                </td>
-                <td scope = "col">
-                    <a width="25px"><i class="material-icons red-text " (click)="onDelete(c.id)">delete</i></a>
-                </td>
-            </tr>
-          </tbody>
-    </table>
-  </div>
+</div>
 </div>

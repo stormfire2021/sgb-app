@@ -32,10 +32,10 @@
             class="validate"
             [(ngModel)]="this.liv.autor"
             pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
-            #name="ngModel"
+            #autor="ngModel"
             required/>
           <label for="input-autor">Autor *</label>
-          <div class="red-text" [hidden]="name.valid || name.untouched">
+          <div class="red-text" [hidden]="autor.valid || autor.untouched">
             Por favor, informe o nome do autor.
           </div>
           <span
@@ -52,10 +52,10 @@
             class="validate"
             [(ngModel)]="this.liv.editora"
             pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
-            #name="ngModel"
+            #editora="ngModel"
             required/>
           <label for="input-editora">Editora *</label>
-          <div class="red-text" [hidden]="name.valid || name.untouched">
+          <div class="red-text" [hidden]="editora.valid || editora.untouched">
             Por favor, informar a Editora
           </div>
           <span
@@ -67,7 +67,7 @@
       <!-- div selects-->
       <div class="row">
         <div class="input-field col s4">
-          <li><label [ngStyle]="{'font-size': '14px' }"  for="input-tipo">Tipo *</label></li>
+          <li><label   for="input-tipo">Tipo *</label></li>
             <select class="browser-default" id="input-tipo" name="input-tipo"
             [(ngModel)]="this.liv.tipo" required>
               <option value=""> Selecione</option>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="input-field col s4">
-          <li><label [ngStyle]="{'font-size': '14px' }" for="input-categoria">Categoria *</label></li>
+          <li><label for="input-categoria">Categoria *</label></li>
             <select class="browser-default" id="input-categoria" name="input-categoria"
             [(ngModel)]="this.liv.categoria" required>
               <option value=""> Selecione</option>
@@ -109,6 +109,7 @@
      </form>
 
   </div>
+
   <div class="table-container">
     <table  class="striped">
         <thead class=" blue-grey darken-2 white-text   ">
@@ -122,25 +123,39 @@
           <th scope = "col">Editar   </th>
           <th scope = "col">Deletar     </th>
         </thead>
+
           <tbody >
+
             <tr *ngFor = 'let liv of livs'>
               <td></td>
                   <td>{{liv.id}}</td>
-                  <td>{{liv.livro}}</td>
-                  <td>{{liv.autor}}</td>
-                  <td>{{liv.editora}}</td>
-                  <td>{{liv.tipo}}</td>
-                  <td>{{liv.categoria}}</td>
+                  <td>{{liv.livro | uppercase}}</td>
+                  <td>{{liv.autor | uppercase}}</td>
+                  <td>{{liv.editora | uppercase }}</td>
+                  <td>{{liv.tipo | uppercase}}</td>
+                  <td>{{liv.categoria | uppercase}}</td>
                 <td scope = "col">
-                    <a [routerLink]="" width="25px"><i class="material-icons yellow-text ">edit</i></a>
+                    <a [routerLink]="" width="25px"><i class="material-icons yellow-text">edit</i></a>
                 </td>
                 <td scope = "col">
                     <a [routerLink]="" width="25px"><i class="material-icons red-text ">delete</i></a>
                 </td>
             </tr>
           </tbody>
+
     </table>
+    <div *ngIf="!livs || livs!.length == 0">
+      <div class="row">
+        <div class="center-align">
+          <i class="col s12 material-icons large red-text">sentiment_dissatisfied</i>
+          <span class="col s12 flow-text red-text"
+            >Sem livros cadastrados!</span
+          >
+        </div>
+      </div>
+    </div>
   </div>
+
 
 
 

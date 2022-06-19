@@ -162,29 +162,37 @@
       "editora": "Teste 2 Editora",
       "tipo": "Digital",
       "categoria": "Geografia"
+    },
+    {
+      "id": "81",
+      "livro": "Tesste Teste",
+      "autor": "Tesste Teste",
+      "editora": "Tesste Teste",
+      "tipo": "Fisico",
+      "categoria": "Programação"
     }
   ],
   "user": [
     {
       "id": 1,
+      "username": "Sheldon Cooper",
       "email": "sheldor@gmail.com",
-      "user": "sheldon",
       "password": "cooper",
-      "permission": "admin"
+      "permission": "Administrador"
     },
     {
       "id": 2,
+      "username": "Scarlet Witch",
       "email": "sw@gmail.com",
-      "user": "scarlet",
       "password": "witch",
-      "permission": "admin"
+      "permission": "Administrador"
     },
     {
       "id": 3,
+      "username": "James Howeet",
       "email": "wolverine@gmail.com",
-      "user": "james",
       "password": "logan",
-      "permission": "read"
+      "permission": "Consulta"
     }
   ]
 }

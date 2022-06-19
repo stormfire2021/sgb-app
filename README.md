@@ -24,5 +24,9 @@ Atividade 09
 Atividade 10
 - [x] Fazer requisições a API com tratamento da resposta com Promises. ( pasta service/list-livro.service.ts)
 - [x] Cadastrar uma entidade no JSON Server.(componnente livro)
-
+Atividade 11
+- [x] Apresentar uma lista de dados com a diretiva estrutural ngFor.
+- [x] Usar a diretiva estrutural ngIf para mostrar ou esconder elementos.
+- [x] Formatar a apresentação de dados com Pipes.
+- [x] Fazer requisições a API com tratamento da resposta com Observables.
   
