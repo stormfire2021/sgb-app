@@ -18,9 +18,12 @@ export class User {
 =======
   constructor( username: string ,email: string,  password: string, permission: string) {
     this.id = String(Math.round(Math.random() * 1000));
-    this.email = email;
     this.username = username;
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+    this.email = email;
+>>>>>>> atividade11
     this.password = password;
     this.permission = permission;
   }

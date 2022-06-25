@@ -181,6 +181,9 @@ export class ListCategoriasService {
       }
     }
   }
+<<<<<<< HEAD
 >>>>>>> develop
 
+=======
+>>>>>>> atividade11
 }

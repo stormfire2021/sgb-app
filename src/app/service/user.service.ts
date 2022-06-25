@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { User } from '../model/User';
 
 @Injectable({
+<<<<<<< HEAD
   providedIn: 'root',
 })
 export class UserService {
@@ -30,6 +31,33 @@ export class UserService {
           email: user.email,
           password: user.password,
           permission: user.permission,
+=======
+  providedIn: 'root'
+})
+export class UserService {
+
+  private apiUrl = 'http://localhost:3000/user'
+
+
+  constructor(private http: HttpClient) { }
+
+  getAll(): Observable<User[]> {
+        return this.http.get<User[]>( this.apiUrl)
+  }
+
+  async addUser(user : User): Promise<any>{
+
+    try {
+      // realiza o post no servidor via httpClient
+      const response = await fetch(this.apiUrl, {
+        method: 'POST',
+        body: JSON.stringify({
+          "id": user.id,
+          "username": user.username,
+          "email": user.email,
+          "password": user.password,
+          "permission": user.permission
+>>>>>>> atividade11
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -38,6 +66,7 @@ export class UserService {
       });
 
       if (!response.ok) {
+<<<<<<< HEAD
         alert('Ops! Consulta a Fabiula!');
       } else {
         alert('Usuário cadastrado com sucesso!');
@@ -109,4 +138,21 @@ export class UserService {
   }
 
 
+=======
+         alert("Ops! Consulta a Fabiula!");
+      }else{
+        alert("Usuário cadastrado com sucesso!");
+      }
+
+    } catch (error) {
+      if (error instanceof Error) {
+        console.log('error message: ', error.message);
+
+      } else {
+        console.log('unexpected error: ', error);
+
+      }
+    }
+  }
+>>>>>>> atividade11
 }

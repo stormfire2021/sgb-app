@@ -164,6 +164,33 @@
       "editora": "Tesste Teste",
       "tipo": "Fisico",
       "categoria": "Programação"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "id": "382",
+      "livro": "Tesste Teste",
+      "autor": "Tesste Teste",
+      "editora": "Tesste Teste",
+      "tipo": "Fisico",
+      "categoria": "Banco de Dados"
+    },
+    {
+      "id": "76",
+      "livro": "Teste 2",
+      "autor": "Teste 2 Autor",
+      "editora": "Teste 2 Editora",
+      "tipo": "Digital",
+      "categoria": "Geografia"
+    },
+    {
+      "id": "81",
+      "livro": "Tesste Teste",
+      "autor": "Tesste Teste",
+      "editora": "Tesste Teste",
+      "tipo": "Fisico",
+      "categoria": "Programação"
+>>>>>>> atividade11
     }
   ],
   "user": [
@@ -179,6 +206,7 @@
       "username": "Scarlet Witch",
       "email": "sw@gmail.com",
       "password": "witch",
+<<<<<<< HEAD
       "permission": "Consulta"
     },
     {
@@ -194,6 +222,16 @@
       "email": "stormfire@gmail.com",
       "password": "123456",
       "permission": "Administrador"
+=======
+      "permission": "Administrador"
+    },
+    {
+      "id": 3,
+      "username": "James Howeet",
+      "email": "wolverine@gmail.com",
+      "password": "logan",
+      "permission": "Consulta"
+>>>>>>> atividade11
     }
   ]
 }
