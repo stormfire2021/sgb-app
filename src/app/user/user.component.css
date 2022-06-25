@@ -1,8 +1,4 @@
 .table-container {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> develop
   height: 370px;
   max-width: 100%;
   overflow: auto;
@@ -12,19 +8,4 @@
 .tdTable {
   text-align: center;
   vertical-align: middle;
-<<<<<<< HEAD
 }
-=======
-=======
-  height: 300px;
-  max-width: 100%;
-  overflow: auto;
-
- }
- table, th, td {
-  text-align: center;
->>>>>>> develop
-}
-
-
->>>>>>> develop

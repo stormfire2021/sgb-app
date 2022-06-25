@@ -32,10 +32,10 @@
             class="validate"
             [(ngModel)]="this.liv.autor"
             pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
-            #autor="ngModel"
+            #name="ngModel"
             required/>
           <label for="input-autor">Autor *</label>
-          <div class="red-text" [hidden]="autor.valid || autor.untouched">
+          <div class="red-text" [hidden]="name.valid || name.untouched">
             Por favor, informe o nome do autor.
           </div>
           <span
@@ -52,10 +52,10 @@
             class="validate"
             [(ngModel)]="this.liv.editora"
             pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)?(\s[a-zA-Z0-9-_]*)+"
-            #editora="ngModel"
+            #name="ngModel"
             required/>
           <label for="input-editora">Editora *</label>
-          <div class="red-text" [hidden]="editora.valid || editora.untouched">
+          <div class="red-text" [hidden]="name.valid || name.untouched">
             Por favor, informar a Editora
           </div>
           <span
@@ -67,11 +67,7 @@
       <!-- div selects-->
       <div class="row">
         <div class="input-field col s4">
-<<<<<<< HEAD
           <li><label [ngStyle]="{'font-size': '14px' }"  for="input-tipo">Tipo *</label></li>
-=======
-          <li><label   for="input-tipo">Tipo *</label></li>
->>>>>>> develop
             <select class="browser-default" id="input-tipo" name="input-tipo"
             [(ngModel)]="this.liv.tipo" required>
               <option value=""> Selecione</option>
@@ -82,11 +78,7 @@
         </div>
 
         <div class="input-field col s4">
-<<<<<<< HEAD
           <li><label [ngStyle]="{'font-size': '14px' }" for="input-categoria">Categoria *</label></li>
-=======
-          <li><label for="input-categoria">Categoria *</label></li>
->>>>>>> develop
             <select class="browser-default" id="input-categoria" name="input-categoria"
             [(ngModel)]="this.liv.categoria" required>
               <option value=""> Selecione</option>
@@ -98,15 +90,7 @@
         <div class="input-field col s2">
            <br>
             <li> <button
-<<<<<<< HEAD
              class="btn waves-effect waves-light  brown darken-1" type="submit"
-=======
-<<<<<<< HEAD
-             class="btn waves-effect waves-light  brown darken-1" type="submit"
-=======
-             class="btn waves-effect waves-light  blue-grey darken-2" type="submit"
->>>>>>> develop
->>>>>>> develop
              [disabled]="!form.valid">Salvar<i class="material-icons right">save</i>
             </button>
           </li>
@@ -121,36 +105,10 @@
           </li>
         </div>
        </div>
-<<<<<<< HEAD
-=======
 
      </form>
 
   </div>
-<<<<<<< HEAD
-  <div>
-    <table  class="striped">
-      <tr class=" brown darken-1 white-text   ">
-        <th width="5%" class="tdTable" scope = "col">ID. </th>
-        <th scope = "col" width="25%" class="tdTable">Livro      </th>
-        <th scope = "col" width="15%"class="tdTable">Autor      </th>
-        <th scope = "col" width="15%"class="tdTable">Editora    </th>
-        <th scope = "col" width="10%" class="tdTable">Tipo       </th>
-        <th scope = "col" width="15%" class="tdTable">Categoria  </th>
-        <th scope = "col" width="3%"  class="tdTable">Editar     </th>
-        <th scope = "col" width="3%"  class="tdTable">Deletar    </th>
-
-      </tr>
-    </table>
-  </div>
->>>>>>> develop
-
-  <div class="table-container ">
-    <table  class="striped">
-=======
-
-<<<<<<< HEAD
-  </div>
   <div>
     <table  class="striped">
       <tr class=" brown darken-1 white-text   ">
@@ -169,30 +127,8 @@
 
   <div class="table-container ">
     <table  class="striped">
-=======
-  <div class="table-container">
-    <table  class="striped">
-        <thead class=" blue-grey darken-2 white-text   ">
-        <th></th>
-        <th scope = "col">ID.           </th>
-          <th scope = "col">Livro        </th>
-          <th scope = "col">Autor       </th>
-          <th scope = "col">Tipo      </th>
-          <th scope = "col">Editora  </th>
-          <th scope = "col">Categoria     </th>
-          <th scope = "col">Editar   </th>
-          <th scope = "col">Deletar     </th>
-        </thead>
-
->>>>>>> atividade11
->>>>>>> develop
           <tbody >
-
             <tr *ngFor = 'let liv of livs'>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> develop
                   <td width="5%" class="tdTable" >{{liv.id}}    </td>
                   <td width="25%">{{liv.livro}}                 </td>
                   <td width="15%">{{liv.autor}}                 </td>
@@ -201,40 +137,14 @@
                   <td width="15%">{{liv.categoria}}             </td>
                 <td scope = "col" width="3%">
                     <a  width="25px"><i class="material-icons yellow-text" (click)="onUpdate(liv)">edit</i></a>
-<<<<<<< HEAD
-=======
-=======
-              <td></td>
-                  <td>{{liv.id}}</td>
-                  <td>{{liv.livro | uppercase}}</td>
-                  <td>{{liv.autor | uppercase}}</td>
-                  <td>{{liv.editora | uppercase }}</td>
-                  <td>{{liv.tipo | uppercase}}</td>
-                  <td>{{liv.categoria | uppercase}}</td>
-                <td scope = "col">
-                    <a [routerLink]="" width="25px"><i class="material-icons yellow-text">edit</i></a>
->>>>>>> atividade11
->>>>>>> develop
                 </td>
                 <td scope = "col" width="3%">
                     <a  width="25px"><i class="material-icons red-text" (click)="onDelete(liv)">delete</i></a>
                 </td>
             </tr>
           </tbody>
-
     </table>
-    <div *ngIf="!livs || livs!.length == 0">
-      <div class="row">
-        <div class="center-align">
-          <i class="col s12 material-icons large red-text">sentiment_dissatisfied</i>
-          <span class="col s12 flow-text red-text"
-            >Sem livros cadastrados!</span
-          >
-        </div>
-      </div>
-    </div>
   </div>
-
 
 
 
