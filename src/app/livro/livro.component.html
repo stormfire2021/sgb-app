@@ -1,10 +1,10 @@
-<div class="card-panel blue-grey darken-2 center card-title white-text">  Cadastro Livro </div>
+<div class="card-panel brown darken-1 center card-title white-text">  Gerenciador de Livro </div>
   <!-- Div principal-->
   <div class="container contact">
     <form class="col s12" #form="ngForm" (submit)="onSubmit()">
       <!--div do input-livro-->
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s4">
           <input
             id="input-livro"
             name="input-livro"
@@ -23,11 +23,8 @@
             data-error="O campo é inválido"
             data-success="Campo Valido"></span>
          </div>
-      </div>
 
-        <!--div input-autor e input-editora -->
-      <div class="row">
-        <div class="input-field col s6">
+         <div class="input-field col s4">
           <input
             id="input-autor"
             name="input-autor"
@@ -47,7 +44,7 @@
             data-success="Campo Valido"></span>
         </div>
 
-        <div class="input-field col s6">
+        <div class="input-field col s4">
           <input
             id="input-editora"
             name="input-editora"
@@ -67,10 +64,9 @@
             data-success="Campo Valido"></span>
         </div>
       </div>
-
       <!-- div selects-->
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s4">
           <li><label [ngStyle]="{'font-size': '14px' }"  for="input-tipo">Tipo *</label></li>
             <select class="browser-default" id="input-tipo" name="input-tipo"
             [(ngModel)]="this.liv.tipo" required>
@@ -81,68 +77,69 @@
             </select>
         </div>
 
-        <div class="input-field col s6">
+        <div class="input-field col s4">
           <li><label [ngStyle]="{'font-size': '14px' }" for="input-categoria">Categoria *</label></li>
             <select class="browser-default" id="input-categoria" name="input-categoria"
             [(ngModel)]="this.liv.categoria" required>
               <option value=""> Selecione</option>
               <option *ngFor="let cat of categorias" [value]="cat.categoria">{{cat.categoria}}</option>
             </select>
-          </div>
-      </div>
+        </div>
+          <!-- div botoes -->
 
-      <!-- div botoes -->
-      <div class="container">
-        <div class="row">
-        <div class="input-field col s6">
-            <button
-             class="btn waves-effect waves-light  blue-grey darken-2" type="submit"
+        <div class="input-field col s2">
+           <br>
+            <li> <button
+             class="btn waves-effect waves-light  brown darken-1" type="submit"
              [disabled]="!form.valid">Salvar<i class="material-icons right">save</i>
             </button>
+          </li>
         </div>
-        <div class="input-field col s6 center">
+        <div class="input-field col s2 center">
+          <br>
+          <li>
             <button
-              class="btn waves-effect waves-light blue-grey darken-2 " routerLink="/home">
+              class="btn waves-effect waves-light brown darken-1 " routerLink="/home">
                 Voltar<i class="material-icons right">arrow_back</i>
             </button>
-
+          </li>
         </div>
-      </div>
-
-      </div>
-
-
+       </div>
 
      </form>
 
   </div>
-  <div class="table-container">
+  <div>
     <table  class="striped">
-        <thead class=" blue-grey darken-2 white-text   ">
-        <th></th>
-        <th scope = "col">ID.           </th>
-          <th scope = "col">Livro        </th>
-          <th scope = "col">Autor       </th>
-          <th scope = "col">Tipo      </th>
-          <th scope = "col">Editora  </th>
-          <th scope = "col">Categoria     </th>
-          <th scope = "col">Editar   </th>
-          <th scope = "col">Deletar     </th>
-        </thead>
+      <tr class=" brown darken-1 white-text   ">
+        <th width="5%" class="tdTable" scope = "col">ID. </th>
+        <th scope = "col" width="25%" class="tdTable">Livro      </th>
+        <th scope = "col" width="15%"class="tdTable">Autor      </th>
+        <th scope = "col" width="15%"class="tdTable">Editora    </th>
+        <th scope = "col" width="10%" class="tdTable">Tipo       </th>
+        <th scope = "col" width="15%" class="tdTable">Categoria  </th>
+        <th scope = "col" width="3%"  class="tdTable">Editar     </th>
+        <th scope = "col" width="3%"  class="tdTable">Deletar    </th>
+
+      </tr>
+    </table>
+  </div>
+
+  <div class="table-container ">
+    <table  class="striped">
           <tbody >
             <tr *ngFor = 'let liv of livs'>
-              <td></td>
-                  <td>{{liv.id}}</td>
-                  <td>{{liv.livro}}</td>
-                  <td>{{liv.autor}}</td>
-                  <td>{{liv.editora}}</td>
-                  <td>{{liv.tipo}}</td>
-                  <td>{{liv.categoria}}</td>
-                <td scope = "col">
-                    <a [routerLink]="" width="25px"><i class="material-icons yellow-text ">edit</i></a>
+                  <td width="5%" class="tdTable" >{{liv.id}}    </td>
+                  <td width="25%">{{liv.livro}}                 </td>
+                  <td width="15%">{{liv.autor}}                 </td>
+                  <td width="15%">{{liv.editora}}               </td>
+                  <td width="10%" class="tdTable">{{liv.tipo}}  </td>
+                  <td width="15%">{{liv.categoria}}             </td>
+                <td scope = "col" width="3%">
+                    <a  width="25px"><i class="material-icons yellow-text" (click)="onUpdate(liv)">edit</i></a>
                 </td>
-                <td scope = "col">
-                    <a [routerLink]="" width="25px"><i class="material-icons red-text ">delete</i></a>
+                <td scope = "col" width="3%">
+                    <a  width="25px"><i class="material-icons red-text" (click)="onDelete(liv)">delete</i></a>
                 </td>
             </tr>
           </tbody>
