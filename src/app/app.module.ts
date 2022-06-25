@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 
@@ -13,6 +12,15 @@ import { LivroComponent } from './livro/livro.component';
 import { LivroListComponent } from './livro-list/livro-list.component';
 
 import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ConsultarComponent } from './consultar/consultar.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +31,9 @@ import { LoginComponent } from './login/login.component';
     LivroComponent,
     LivroListComponent,
     LoginComponent,
-
+    UserComponent,
+    CategoriaComponent,
+    ConsultarComponent,
   ] ,
   imports: [
     BrowserModule,
@@ -31,7 +41,9 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-
+    BrowserAnimationsModule,
+    CarouselModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

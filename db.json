@@ -1,44 +1,44 @@
 {
   "categorias": [
     {
-      "idCategoria": 1,
-      "categoria": "Programação"
-    },
-    {
-      "idCategoria": 2,
-      "categoria": "Banco de Dados"
-    },
-    {
-      "idCategoria": 3,
-      "categoria": "Literatura"
-    },
-    {
-      "idCategoria": 4,
+      "id": 4,
       "categoria": "História"
     },
     {
-      "idCategoria": 5,
+      "id": 5,
       "categoria": "Geografia"
     },
     {
-      "idCategoria": 6,
+      "id": 6,
       "categoria": "Ficção Cientifica"
     },
     {
-      "idCategoria": 7,
+      "id": 7,
       "categoria": "Manga"
     },
     {
-      "idCategoria": 8,
+      "id": 8,
       "categoria": "HQ"
     },
     {
-      "idCategoria": 9,
+      "id": 9,
       "categoria": "Religião"
     },
     {
-      "idCategoria": 10,
-      "categoria": "Infantil"
+      "id": "27",
+      "categoria": "Aventura"
+    },
+    {
+      "id": "42",
+      "categoria": "Programação"
+    },
+    {
+      "id": "47",
+      "categoria": "Literatura"
+    },
+    {
+      "id": "14",
+      "categoria": "Romance"
     }
   ],
   "livros": [
@@ -146,45 +146,36 @@
       "editora": "Tesste Teste",
       "tipo": "Fisico",
       "categoria": "Programação"
-    },
-    {
-      "id": "382",
-      "livro": "Tesste Teste",
-      "autor": "Tesste Teste",
-      "editora": "Tesste Teste",
-      "tipo": "Fisico",
-      "categoria": "Banco de Dados"
-    },
-    {
-      "id": "76",
-      "livro": "Teste 2",
-      "autor": "Teste 2 Autor",
-      "editora": "Teste 2 Editora",
-      "tipo": "Digital",
-      "categoria": "Geografia"
     }
   ],
   "user": [
     {
       "id": 1,
+      "username": "Sheldon Cooper",
       "email": "sheldor@gmail.com",
-      "user": "sheldon",
       "password": "cooper",
-      "permission": "admin"
+      "permission": "Administrador"
     },
     {
       "id": 2,
+      "username": "Scarlet Witch",
       "email": "sw@gmail.com",
-      "user": "scarlet",
       "password": "witch",
-      "permission": "admin"
+      "permission": "Consulta"
     },
     {
       "id": 3,
+      "username": "James Logan",
       "email": "wolverine@gmail.com",
-      "user": "james",
       "password": "logan",
-      "permission": "read"
+      "permission": "Consulta"
+    },
+    {
+      "id": 4,
+      "username": "Fabiula Pellicciotti",
+      "email": "stormfire@gmail.com",
+      "password": "123456",
+      "permission": "Administrador"
     }
   ]
 }

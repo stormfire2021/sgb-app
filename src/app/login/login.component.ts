@@ -1,6 +1,6 @@
 import { NgForm } from '@angular/forms';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { LoginService } from '../service/login.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   senha!: string;
 
 
-  constructor(private router: Router) {
+  constructor(private loginService: LoginService) {
 
   }
 
@@ -27,9 +27,7 @@ export class LoginComponent implements OnInit {
   onSubmit(): void{
 
     if((this.email === 'sheldor@gmail.com') && (this.senha === 'cooper')){
-      this.router.navigate(['/', 'home']);
-      this.formLogin.reset();
-
+      this.loginService.login();
     }else{
       window.alert("USUARIO NÃO AUTORIZADO! \n FALE COM FABIULA!");
       this.formLogin.reset();
