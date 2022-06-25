@@ -1,12 +1,32 @@
+<<<<<<< HEAD
 /* criar o scroll na tabela */
 .table-container {
   height: 350px;
+=======
+<<<<<<< HEAD
+/* criar o scroll na tabela */
+.table-container {
+  height: 350px;
+=======
+.table-container {
+  height: 410px;
+>>>>>>> develop
+>>>>>>> develop
   max-width: 100%;
   overflow: auto;
 
  }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
  /* centraliza o cabeçalho da tabela */
  .tdTable {
   text-align: center;
   vertical-align: middle;
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> develop
+>>>>>>> develop

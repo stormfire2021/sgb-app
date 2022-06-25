@@ -17,6 +17,7 @@ export class LivroComponent implements OnInit {
    * ele recebe a lista do metodo getCategoria()
    */
   categorias?: Categoria[] = [];
+<<<<<<< HEAD
 
   //variavel q recebe e preenche os dados do formLivro
   liv!: Livro;
@@ -37,6 +38,33 @@ export class LivroComponent implements OnInit {
 
   //variavel guarda o nome do livro em caso do update do nome
   nomeLivro!: string;
+=======
+
+  //variavel q recebe e preenche os dados do formLivro
+  liv!: Livro;
+  /*
+   * array que recebe tanto do localStorage quanto do json-server
+   * ele recebe a lista do metodo getCategoria()
+   */
+  livs: Livro[];
+
+<<<<<<< HEAD
+  /*
+   * array que recebe dentro do metodo onDelete
+   * um localStorage com filtro para fazer o delete do registro no localStorage
+   */
+  livsModify?: Livro[];
+
+  //variavel q verifica se o metodo é update ou não
+  update: boolean = false;
+
+  //variavel guarda o nome do livro em caso do update do nome
+  nomeLivro!: string;
+=======
+  liv!: Livro;
+  livs?: Livro[];
+>>>>>>> develop
+>>>>>>> develop
 
 
   constructor( private listCategoria : ListCategoriasService, private listaService : ListLivosService) {
@@ -64,6 +92,7 @@ export class LivroComponent implements OnInit {
       this.livs = this.livs.filter((l) => {
         return l.livro?.valueOf() != this.nomeLivro?.valueOf();
       });
+<<<<<<< HEAD
 
       this.livs.push(this.liv);
       localStorage.setItem('livros', JSON.stringify(this.livs));
@@ -79,6 +108,23 @@ export class LivroComponent implements OnInit {
     this.livs = JSON.parse(localStorage.getItem('livros')!);
      */
 
+=======
+
+      this.livs.push(this.liv);
+      localStorage.setItem('livros', JSON.stringify(this.livs));
+      window.alert('Alteração realizada com sucesso!');
+      this.update = false;
+    } else {
+      this.livs.push(this.liv);
+      localStorage.setItem('livros', JSON.stringify(this.livs));
+      window.alert('Cadastro realizado com sucesso!');
+    }
+    this.formLivro.reset();
+    this.liv = new Livro('', '', '', '', '');
+    this.livs = JSON.parse(localStorage.getItem('livros')!);
+     */
+
+>>>>>>> develop
     if(this.update){
       this.listaService.updateLivro(this.liv);
       this.liv = new Livro('', '', '', '', '');
@@ -91,6 +137,7 @@ export class LivroComponent implements OnInit {
     }
     this.listaService.getAll().subscribe((livs) => this.livs = livs);
 
+<<<<<<< HEAD
   }
 
   onUpdate(liv: Livro) {
@@ -113,6 +160,30 @@ export class LivroComponent implements OnInit {
         return l.livro?.valueOf() != this.nomeLivro?.valueOf();
       });
 
+=======
+  }
+
+  onUpdate(liv: Livro) {
+    let livro = Livro.clone(liv);
+    livro.id = liv.id;
+    this.liv = livro;
+    this.update = true;
+    this.nomeLivro = liv.livro;
+  }
+
+  onDelete(livro: Livro): void {
+    let confirmacao = window.confirm(
+      'Remalmente deseja remover este livro : ' + livro.livro
+    );
+    /*
+    if (!confirmacao) {
+      return;
+    } else {
+      this.livsModify = this.livs.filter((l) => {
+        return l.livro?.valueOf() != this.nomeLivro?.valueOf();
+      });
+
+>>>>>>> develop
       localStorage.setItem('livros', JSON.stringify(this.livsModify));
       this.livs = JSON.parse(localStorage.getItem('livros')!);
     } */

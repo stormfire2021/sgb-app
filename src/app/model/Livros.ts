@@ -6,6 +6,10 @@ export class Livro {
   tipo: string;
   categoria: string;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
   constructor(
     livro: string,
     autor: string,
@@ -14,6 +18,14 @@ export class Livro {
     categoria: string
   ) {
     this.id = String(Math.round(Math.random() * 1000));
+<<<<<<< HEAD
+=======
+=======
+  constructor( livro: string, autor: string, editora: string, tipo: string,
+    categoria: string) {
+    this.id = String(Math.round(Math.random() * 100));
+>>>>>>> develop
+>>>>>>> develop
     this.livro = livro;
     this.autor = autor;
     this.editora = editora;

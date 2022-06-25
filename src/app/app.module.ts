@@ -14,6 +14,10 @@ import { LivroListComponent } from './livro-list/livro-list.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -21,6 +25,11 @@ import { ConsultarComponent } from './consultar/consultar.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> develop
+>>>>>>> develop
 
 @NgModule({
   declarations: [
@@ -33,7 +42,15 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     LoginComponent,
     UserComponent,
     CategoriaComponent,
+<<<<<<< HEAD
     ConsultarComponent,
+=======
+<<<<<<< HEAD
+    ConsultarComponent,
+=======
+
+>>>>>>> develop
+>>>>>>> develop
   ] ,
   imports: [
     BrowserModule,

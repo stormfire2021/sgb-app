@@ -22,6 +22,31 @@ Atividade 09
 - [x] Desabilitar o botão salvar do cadastro enquanto este for invalido
 - [x] Cadastrar uma entidade no json-server via httpCliente
 Atividade 10
+<<<<<<< HEAD
 - [x] Fazer requisições a API com tratamento da resposta com Promises. ( pasta: service/list-livros.service.ts)
 - [x] Desabilitar o botão salvar do cadastro enquanto este for invalido(componentes livro e user)
 - [x] Cadastrar uma entidade no json-server via httpCliente  ( pasta: service/list-livros.service.ts  e componente livro/livrocomponente.ts)
+=======
+<<<<<<< HEAD
+- [x] Fazer requisições a API com tratamento da resposta com Promises. ( pasta: service/list-livros.service.ts)
+- [x] Desabilitar o botão salvar do cadastro enquanto este for invalido(componentes livro e user)
+- [x] Cadastrar uma entidade no json-server via httpCliente  ( pasta: service/list-livros.service.ts  e componente livro/livrocomponente.ts)
+Atividade 11
+- [x] Formatar a apresentação de dados com Pipes.
+
+=======
+- [x] Fazer requisições a API com tratamento da resposta com Promises. ( pasta service/list-livro.service.ts)
+- [x] Cadastrar uma entidade no JSON Server.(componnente livro)
+<<<<<<< HEAD
+
+  
+>>>>>>> develop
+=======
+Atividade 11
+- [x] Apresentar uma lista de dados com a diretiva estrutural ngFor.
+- [x] Usar a diretiva estrutural ngIf para mostrar ou esconder elementos.
+- [x] Formatar a apresentação de dados com Pipes.
+- [x] Fazer requisições a API com tratamento da resposta com Observables.
+  
+>>>>>>> atividade11
+>>>>>>> develop
