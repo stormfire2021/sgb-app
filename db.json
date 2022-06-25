@@ -1,24 +1,6 @@
 {
   "categorias": [
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-      "id": 1,
-      "categoria": "Programação"
-    },
-    {
-      "id": 2,
-      "categoria": "Banco de Dados"
-    },
-    {
-      "id": 3,
-      "categoria": "Literatura"
-    },
-    {
->>>>>>> develop
->>>>>>> develop
       "id": 4,
       "categoria": "História"
     },
@@ -45,10 +27,6 @@
     {
       "id": "27",
       "categoria": "Aventura"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> develop
     },
     {
       "id": "42",
@@ -61,11 +39,6 @@
     {
       "id": "14",
       "categoria": "Romance"
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
->>>>>>> develop
     }
   ],
   "livros": [
@@ -173,36 +146,6 @@
       "editora": "Tesste Teste",
       "tipo": "Fisico",
       "categoria": "Programação"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    },
-    {
-      "id": "382",
-      "livro": "Tesste Teste",
-      "autor": "Tesste Teste",
-      "editora": "Tesste Teste",
-      "tipo": "Fisico",
-      "categoria": "Banco de Dados"
-    },
-    {
-      "id": "76",
-      "livro": "Teste 2",
-      "autor": "Teste 2 Autor",
-      "editora": "Teste 2 Editora",
-      "tipo": "Digital",
-      "categoria": "Geografia"
-    },
-    {
-      "id": "81",
-      "livro": "Tesste Teste",
-      "autor": "Tesste Teste",
-      "editora": "Tesste Teste",
-      "tipo": "Fisico",
-      "categoria": "Programação"
->>>>>>> atividade11
->>>>>>> develop
     }
   ],
   "user": [
@@ -218,7 +161,6 @@
       "username": "Scarlet Witch",
       "email": "sw@gmail.com",
       "password": "witch",
-<<<<<<< HEAD
       "permission": "Consulta"
     },
     {
@@ -234,34 +176,6 @@
       "email": "stormfire@gmail.com",
       "password": "123456",
       "permission": "Administrador"
-=======
-<<<<<<< HEAD
-      "permission": "Consulta"
-    },
-    {
-      "id": 3,
-      "username": "James Logan",
-      "email": "wolverine@gmail.com",
-      "password": "logan",
-      "permission": "Consulta"
-    },
-    {
-      "id": 4,
-      "username": "Fabiula Pellicciotti",
-      "email": "stormfire@gmail.com",
-      "password": "123456",
-      "permission": "Administrador"
-=======
-      "permission": "Administrador"
-    },
-    {
-      "id": 3,
-      "username": "James Howeet",
-      "email": "wolverine@gmail.com",
-      "password": "logan",
-      "permission": "Consulta"
->>>>>>> atividade11
->>>>>>> develop
     }
   ]
 }
