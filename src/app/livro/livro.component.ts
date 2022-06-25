@@ -26,6 +26,7 @@ export class LivroComponent implements OnInit {
    */
   livs: Livro[];
 
+<<<<<<< HEAD
   /*
    * array que recebe dentro do metodo onDelete
    * um localStorage com filtro para fazer o delete do registro no localStorage
@@ -37,6 +38,10 @@ export class LivroComponent implements OnInit {
 
   //variavel guarda o nome do livro em caso do update do nome
   nomeLivro!: string;
+=======
+  liv!: Livro;
+  livs?: Livro[];
+>>>>>>> develop
 
 
   constructor( private listCategoria : ListCategoriasService, private listaService : ListLivosService) {

@@ -1,4 +1,5 @@
 .table-container {
+<<<<<<< HEAD
   height: 370px;
   max-width: 100%;
   overflow: auto;
@@ -8,4 +9,13 @@
 .tdTable {
   text-align: center;
   vertical-align: middle;
+=======
+  height: 300px;
+  max-width: 100%;
+  overflow: auto;
+
+ }
+ table, th, td {
+  text-align: center;
+>>>>>>> develop
 }

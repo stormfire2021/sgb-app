@@ -15,9 +15,15 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: LivroListComponent },
   { path: 'livro', component: LivroComponent },
+<<<<<<< HEAD
   { path: 'search', component: ConsultarComponent },
   { path: 'categoria', component: CategoriaComponent },
   { path: 'user', component: UserComponent }
+=======
+  { path: 'login', component: LoginComponent },
+  { path: 'user', component: UserComponent },
+  { path: 'categoria', component: CategoriaComponent }
+>>>>>>> develop
 
 ];
 

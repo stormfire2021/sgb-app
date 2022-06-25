@@ -1,4 +1,5 @@
 export class Categoria {
+<<<<<<< HEAD
   id: string;
   categoria: string;
 
@@ -12,5 +13,17 @@ export class Categoria {
     c.id = cat.id;
     c.categoria = cat.categoria;
     return c;
+=======
+  id:string;
+  categoria:string;
+
+  constructor(categoria: string) {
+  this.id = String(Math.round(Math.random() * 100));
+  this.categoria = categoria;
+
+>>>>>>> develop
   }
 }
+
+
+

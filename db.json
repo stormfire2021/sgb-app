@@ -1,6 +1,21 @@
 {
   "categorias": [
     {
+<<<<<<< HEAD
+=======
+      "id": 1,
+      "categoria": "Programação"
+    },
+    {
+      "id": 2,
+      "categoria": "Banco de Dados"
+    },
+    {
+      "id": 3,
+      "categoria": "Literatura"
+    },
+    {
+>>>>>>> develop
       "id": 4,
       "categoria": "História"
     },
@@ -27,6 +42,7 @@
     {
       "id": "27",
       "categoria": "Aventura"
+<<<<<<< HEAD
     },
     {
       "id": "42",
@@ -39,6 +55,8 @@
     {
       "id": "14",
       "categoria": "Romance"
+=======
+>>>>>>> develop
     }
   ],
   "livros": [

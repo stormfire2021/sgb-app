@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="card-panel brown darken-1 center card-title white-text"> Gerenciador de Usuários </div>
   <!-- Div principal-->
   <div class="container contact">
@@ -142,3 +143,138 @@
           </tbody>
     </table>
   </div>
+=======
+
+<div class="card-panel blue-grey darken-2 center card-title white-text">  Gerenciar Usuário </div>
+<!-- Div principal-->
+<div class="container contact">
+  <form class="col s8" [formGroup]="formulario"  (ngSubmit)="onSubmit()">
+    <!--div do input-livro-->
+    <div class="row">
+      <div class="input-field col s4">
+        <input
+          id="input-user"
+          name="input-user"
+          type="text"
+          formControlName = "username"
+          class="validate"
+          required/>
+        <label for="input-Livro">Nome *</label>
+
+        <span
+          class="helper-text"
+          data-error="O campo é inválido"
+          data-success="Campo Valido"></span>
+       </div>
+
+       <div class="input-field col s4">
+        <input
+          id="input-email"
+          name="input-email"
+          type="text"
+          class="validate"
+          formControlName = "email"
+          required/>
+        <label for="input-email">E-mail *</label>
+
+        <span
+          class="helper-text"
+          data-error="O campo é inválido"
+          data-success="Campo Valido"></span>
+      </div>
+      <div class="input-field col s4">
+        <input
+        id="input-password"
+        name="input-password"
+        type="password"
+        class="validate"
+        formControlName = "password"
+        required
+      />
+      <label for="input-password">Senha *</label>
+
+     </div>
+    </div>
+
+    <!-- div senha e permissao-->
+    <div class="row">
+      <div class="input-field col s4">
+        <br>
+        <input
+        id="input-repassword"
+        name="input-repassword"
+        type="password"
+        class="validate"
+
+      />
+      <label for="input-password">Redigite a Senha *</label>
+
+     </div>
+
+    <div class="input-field col s4">
+        <li><label [ngStyle]="{'font-size': '14px' }" for="input-permission">Permissão *</label></li>
+          <select class="browser-default" id="input-permission" name="input-permission"
+          formControlName = "permission" required>
+          <option value=""> Selecione</option>
+          <option value="Administrador">Administrador</option>
+          <option value="Consulta">Consulta</option>
+          </select>
+      </div>
+
+      <div class="row">
+        <!-- div botoes -->
+
+      <div class="input-field col s2">
+         <br>
+          <li> <button
+           class="btn waves-effect waves-light  blue-grey darken-2" type="submit"
+           >Salvar<i class="material-icons right">save</i>
+          </button>
+        </li>
+      </div>
+      <div class="input-field col s2 center">
+        <br>
+        <li>
+          <button
+            class="btn waves-effect waves-light blue-grey darken-2 " routerLink="/home">
+              Voltar<i class="material-icons right">arrow_back</i>
+          </button>
+        </li>
+      </div>
+     </div>
+    </div>
+   </form>
+
+</div>
+<div class="container">
+<div class="table-container">
+  <table  class="striped">
+      <thead class=" blue-grey darken-2 white-text   ">
+
+      <th scope = "col">ID.           </th>
+        <th scope = "col">Nome        </th>
+        <th scope = "col">E-mail       </th>
+        <th scope = "col">Permissão      </th>
+        <th scope = "col">Editar   </th>
+        <th scope = "col">Deletar     </th>
+      </thead>
+        <tbody >
+          <tr *ngFor = "let u of users">
+
+                <td>{{u.id}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.permission}}</td>
+                <td scope = "col">
+                  <a [routerLink]="" width="25px"><i class="material-icons yellow-text " >edit</i></a>
+              </td>
+              <td scope = "col">
+                  <a [routerLink]="" width="25px"><i class="material-icons red-text " >delete</i></a>
+              </td>
+          </tr>
+        </tbody>
+  </table>
+</div>
+</div>
+
+>>>>>>> develop
