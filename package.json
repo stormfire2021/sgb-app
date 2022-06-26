@@ -1,10 +1,10 @@
 {
   "name": "sgb-app",
   "version": "0.0.0",
-  "scripts": {
+    "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href=/sgb-app",
+    "build": "ng build --base-href=/sgb-app/",
     "ghpages": "angular-cli-ghpages --dir=dist/sgb-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
