@@ -35,3 +35,6 @@
    - https://stormfire2021.github.io/sgb-app/home
  - [x] Build e deploy da aplicação.
    - https://stormfire2021.github.io/sgb-app/
+
+login : sheldor@gmail.com (para o sistema)
+senha : cooper
