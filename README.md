@@ -10,7 +10,7 @@
  - [x] Criar o layout da aplicação com componentes, ou seja, o cabeçalho e rodapé precisam ser componentes.
    - https://stormfire2021.github.io/sgb-app/login
  - [x] Usar pelo menos dois tipos de data-binding (Interpolation, Property Binding, Event Binding e Two Way Data Binding).
-  - https://stormfire2021.github.io/sgb-app/livro
+   - https://stormfire2021.github.io/sgb-app/livro
  - [x] Passar dados via hierarquia de componentes, ou seja, usando @Input ou @Output.
    - Consta no repositorio da tarefa correspondente  
  - [x] Mapear componentes à rotas no módulo de rotas.
